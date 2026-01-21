@@ -77,20 +77,28 @@ input:focus, textarea:focus {
     border-color: #a855f7;
 }
 
-/* Botón */
-button {
-    background-color: #a855f7;
+/* Botones modernos */
+button,
+.btn {
+    background: linear-gradient(135deg, #a855f7, #6b21a8);
     color: white;
-    padding: 12px;
+    padding: 12px 22px;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(168, 85, 247, 0.3);
+    display: inline-block;
+    text-decoration: none; /* importante para links botón */
 }
 
-button:hover {
-    background-color: #6b21a8;
+button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(107, 33, 168, 0.4);
+    opacity: 0.95;
 }
 
 /* Footer */
@@ -158,4 +166,16 @@ footer {
 
 .contact a:hover {
     text-decoration: underline;
+}
+
+.projects {
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto; /* esto centra la sección */
+}
+
+.projects a {
+    color: #6a4fcf;
+    font-weight: bold;
+    text-decoration: none;
 }
